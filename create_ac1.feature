@@ -1,4 +1,4 @@
-@Tiffany @june @shopping
+@Tiffany @June @shopping
 Feature: Tiffany to create new account
 Background: Create a new account
 Scenario: Test for create a new account
