@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--model testing--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" inputOutput="false" manual="true">
+<model-identification modelTag="@Shipping and shopping @1.0 @ShippingFlow">
+<model-identification-field name="Application Name" partOfTag="true" value="Shipping and shopping"/>
+<model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
+<model-identification-field name="Application Function" partOfTag="true" value="ShippingFlow"/>
+<model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+<model-identification-field name="Created By" partOfTag="false" value="whcjing@cn.ibm.com"/>
+<model-identification-field name="Created Date and Time" partOfTag="false" value="12 Jun 2018 04:17:36"/>
+<model-identification-field name="Updated By" partOfTag="false" value="whcjing@cn.ibm.com"/>
+<model-identification-field name="Updated Date and Time" partOfTag="false" value="23 Jul 2019 14:56:33"/>
+<model-identification-field name="Application Sub Function" partOfTag="false" value=""/>
+<model-identification-field name="Test Stage" partOfTag="false" value=""/>
+<model-identification-field name="Criticality" partOfTag="false" value=""/>
+<model-identification-field name="Project" partOfTag="false" value=""/>
+<model-identification-field name="Epic" partOfTag="false" value=""/>
+<model-identification-field name="Feature" partOfTag="false" value=""/>
+<model-identification-field name="User Story" partOfTag="false" value=""/>
+</model-identification>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="FirstName" type="STRING">
+<value name="Jane" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="LastName" type="STRING">
+<value name="Chen" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Email" type="STRING">
+<value name="whcjing@cn.ibm.com" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Gender" type="STRING">
+<value name="female" weight="1"/>
+<value name="male" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Birth_month" type="STRING">
+<value name="valid" weight="1"/>
+<value name="invalid" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Birth_day" type="STRING">
+<value name="valid" weight="1"/>
+<value name="invalid" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="RelationshipStatus" type="STRING">
+<value name="Married" weight="1"/>
+<value name="Engaged" weight="1"/>
+<value name="Single" weight="1"/>
+</attribute>
+<coverage-reqs-sets defaultCoverageRequirementsSet="coverage1">
+<coverage-reqs-set description="for testing" name="coverage1">
+<coverage-req>
+<attribute name="FirstName"/>
+<attribute name="LastName"/>
+<attribute name="Email"/>
+<attribute name="Gender"/>
+<attribute name="RelationshipStatus"/>
+<coverage-goal coverage-goal-val="2"/>
+</coverage-req>
+</coverage-reqs-set>
+</coverage-reqs-sets>
+<neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+<coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+<coverage-req>
+<coverage-goal coverage-goal-val="1"/>
+<negative-attribute-combination>
+<attribute name="Birth_month"/>
+</negative-attribute-combination>
+</coverage-req>
+<coverage-req>
+<coverage-goal coverage-goal-val="1"/>
+<negative-attribute-combination>
+<attribute name="Birth_day"/>
+</negative-attribute-combination>
+</coverage-req>
+</coverage-reqs-set>
+</neg-coverage-reqs-sets>
+<negative-combination>
+<attr-value attribute="Birth_month" value="invalid"/>
+</negative-combination>
+<negative-combination>
+<attr-value attribute="Birth_day" value="invalid"/>
+</negative-combination>
+<focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+<focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="false"/>
+<focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="true">
+<focus-ctd-trigger appliance="FIRST_TEST" is_or="false" name="Feature_CrtAcc" negative="false" suppressNewLine="false" triggerType="Feature">
+<focus-ctd-single-template>
+<focus-ctd-template text="Feature"/>
+</focus-ctd-single-template>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="FIRST_TEST" is_or="false" name="Background_CrtAcct" negative="false" suppressNewLine="false" triggerType="Background">
+<focus-ctd-single-template>
+<focus-ctd-template text="Background"/>
+</focus-ctd-single-template>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Scenario_CrtAcct" negative="false" suppressNewLine="false" triggerType="Scenario">
+<focus-ctd-single-template>
+<focus-ctd-template text="Scenario"/>
+</focus-ctd-single-template>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Steps_CrtAcct" negative="false" suppressNewLine="false" triggerType="Steps">
+<focus-ctd-cucumber-steps-template>
+<cucumber-step actionName="navigateTo" category="NavigationalCategory" stepType="Given">
+<focus-ctd-template text="I navigate to &quot;https://www.tiffany.com&quot;"/>
+<actionParameter data="&quot;https://www.tiffany.com&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="mouseHover" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I mouse hover on &quot;[MyAccount]&quot;"/>
+<actionParameter data="&quot;[MyAccount]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="clickLink" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I click on &quot;[Create account]&quot; link"/>
+<actionParameter data="&quot;[Create account]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="addWaitSeconds" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I add wait seconds of &quot;30&quot;"/>
+<actionParameter data="&quot;30&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[FirstName]&quot; the value &quot;&lt;att_name = FirstName&gt;&quot;"/>
+<actionParameter data="&quot;[FirstName]&quot;" dataSource="UIControl"/>
+<actionParameter data="FirstName" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[LastName]&quot; the value &quot;&lt;att_name = LastName&gt;&quot;"/>
+<actionParameter data="&quot;[LastName]&quot;" dataSource="UIControl"/>
+<actionParameter data="LastName" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[Email]&quot; the value &quot;&lt;att_name = Email&gt;&quot;"/>
+<actionParameter data="&quot;[Email]&quot;" dataSource="UIControl"/>
+<actionParameter data="Email" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectRadioButton" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select radio &quot;[Gender]&quot; with the option &quot;&lt;att_name = Gender&gt;&quot;"/>
+<actionParameter data="&quot;[Gender]&quot;" dataSource="UIControl"/>
+<actionParameter data="Gender" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Birth_month]&quot; the value &quot;&lt;att_name = Birth_month&gt;&quot;"/>
+<actionParameter data="&quot;[Birth_month]&quot;" dataSource="UIControl"/>
+<actionParameter data="Birth_month" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Birth_day]&quot; the value &quot;&lt;att_name = Birth_day&gt;&quot;"/>
+<actionParameter data="&quot;[Birth_day]&quot;" dataSource="UIControl"/>
+<actionParameter data="Birth_day" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Relationship_Status]&quot; the value &quot;&lt;att_name = RelationshipStatus&gt;&quot;"/>
+<actionParameter data="&quot;[Relationship_Status]&quot;" dataSource="UIControl"/>
+<actionParameter data="RelationshipStatus" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="clickLink" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I click on &quot;[Create_Account_button]&quot; link"/>
+<actionParameter data="&quot;[Create_Account_button]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="captureValueAsVariable" category="ElementCaptureCategory" stepType="When">
+<focus-ctd-template text="I capture value &quot;&lt;att_name = Birth_month&gt;&quot; as variable &quot;&gt;12&quot;"/>
+<actionParameter data="Birth_month" dataSource="AttributeValue"/>
+<actionParameter data="&quot;&gt;12&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="captureValueAsVariable" category="ElementCaptureCategory" stepType="Then">
+<focus-ctd-template text="I capture value &quot;[error_message]&quot; as variable &quot;{Name Match Pattern}&quot;"/>
+<actionParameter data="&quot;[error_message]&quot;" dataSource="UIControl"/>
+<actionParameter data="&quot;{Name Match Pattern}&quot;" dataSource="RegularExpression"/>
+</cucumber-step>
+</focus-ctd-cucumber-steps-template>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Steps_CrtAcct_1" negative="false" suppressNewLine="false" triggerType="Steps">
+<focus-ctd-cucumber-steps-template>
+<cucumber-step actionName="navigateTo" category="NavigationalCategory" stepType="Given">
+<focus-ctd-template text="I navigate to &quot;https://www.tiffany.com&quot;"/>
+<actionParameter data="&quot;https://www.tiffany.com&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="mouseHover" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I mouse hover on &quot;[MyAccount]&quot;"/>
+<actionParameter data="&quot;[MyAccount]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="clickLink" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I click on &quot;[Create account]&quot; link"/>
+<actionParameter data="&quot;[Create account]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="addWaitSeconds" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I add wait seconds of &quot;30&quot;"/>
+<actionParameter data="&quot;30&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[FirstName]&quot; the value &quot;&lt;att_name = FirstName&gt;&quot;"/>
+<actionParameter data="&quot;[FirstName]&quot;" dataSource="UIControl"/>
+<actionParameter data="FirstName" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[LastName]&quot; the value &quot;&lt;att_name = LastName&gt;&quot;"/>
+<actionParameter data="&quot;[LastName]&quot;" dataSource="UIControl"/>
+<actionParameter data="LastName" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="populateTextField" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I enter into input field &quot;[Email]&quot; the value &quot;&lt;att_name = Email&gt;&quot;"/>
+<actionParameter data="&quot;[Email]&quot;" dataSource="UIControl"/>
+<actionParameter data="Email" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectRadioButton" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select radio &quot;[Gender]&quot; with the option &quot;&lt;att_name = Gender&gt;&quot;"/>
+<actionParameter data="&quot;[Gender]&quot;" dataSource="UIControl"/>
+<actionParameter data="Gender" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Birth_month]&quot; the value &quot;&lt;att_name = Birth_month&gt;&quot;"/>
+<actionParameter data="&quot;[Birth_month]&quot;" dataSource="UIControl"/>
+<actionParameter data="Birth_month" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Birth_day]&quot; the value &quot;&lt;att_name = Birth_day&gt;&quot;"/>
+<actionParameter data="&quot;[Birth_day]&quot;" dataSource="UIControl"/>
+<actionParameter data="Birth_day" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="selectDropDownByValue" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select from dropdown &quot;[Relationship_Status]&quot; the value &quot;&lt;att_name = RelationshipStatus&gt;&quot;"/>
+<actionParameter data="&quot;[Relationship_Status]&quot;" dataSource="UIControl"/>
+<actionParameter data="RelationshipStatus" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="clickLink" category="ElementClickCategory" stepType="And">
+<focus-ctd-template text="I click on &quot;[Create_Account_button]&quot; link"/>
+<actionParameter data="&quot;[Create_Account_button]&quot;" dataSource="UIControl"/>
+</cucumber-step>
+<cucumber-step actionName="captureValueAsVariable" category="ElementCaptureCategory" stepType="When">
+<focus-ctd-template text="I capture value &quot;&lt;att_name = Birth_month&gt;&quot; as variable &quot;&gt;12&quot;"/>
+<actionParameter data="Birth_month" dataSource="AttributeValue"/>
+<actionParameter data="&quot;&gt;12&quot;" dataSource="Literal"/>
+</cucumber-step>
+<cucumber-step actionName="captureValueAsVariable" category="ElementCaptureCategory" stepType="Then">
+<focus-ctd-template text="I capture value &quot;[error_message]&quot; as variable &quot;{Name Match Pattern}&quot;"/>
+<actionParameter data="&quot;[error_message]&quot;" dataSource="UIControl"/>
+<actionParameter data="&quot;{Name Match Pattern}&quot;" dataSource="RegularExpression"/>
+</cucumber-step>
+</focus-ctd-cucumber-steps-template>
+</focus-ctd-trigger>
+</focus-ctd-decoration>
+<focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="false"/>
+<focus-ctd-model-sync>
+<focus-ctd-model-sync-mult/>
+<focus-ctd-model-sync-na/>
+</focus-ctd-model-sync>
+</focus-model>
