@@ -2,7 +2,7 @@
 <!DOCTYPE focus-model [
 ]>
 <!--model testing--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" inputOutput="false" manual="true">
-<model-identification modelTag="@Shipping and shopping @1.0 @ShippingFlow">
+<model-identification modelTag="@Shipping and shopping @1.0 @Shipping and shopping_ShippingFlow">
 <model-identification-field name="Application Name" partOfTag="true" value="Shipping and shopping"/>
 <model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
 <model-identification-field name="Application Function" partOfTag="true" value="ShippingFlow"/>
