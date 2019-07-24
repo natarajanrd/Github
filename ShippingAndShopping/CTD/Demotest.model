@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!----><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" inputOutput="false" manual="true">
+<model-identification modelTag="@Demotest @Demotest code version-01 @Training for CTD">
+<model-identification-field name="Application Name" partOfTag="true" value="Demotest"/>
+<model-identification-field name="Application code version #" partOfTag="true" value="Demotest code version-01"/>
+<model-identification-field name="Application Function" partOfTag="true" value="Training for CTD"/>
+<model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+<model-identification-field name="Created By" partOfTag="false" value="xiongpwh@cn.ibm.com"/>
+<model-identification-field name="Created Date and Time" partOfTag="false" value="30 May 2018 11:39:20"/>
+<model-identification-field name="Updated By" partOfTag="false" value="xiongpwh@cn.ibm.com"/>
+<model-identification-field name="Updated Date and Time" partOfTag="false" value="12 Jun 2018 02:27:55"/>
+<model-identification-field name="Application Sub Function" partOfTag="false" value=""/>
+<model-identification-field name="Test Stage" partOfTag="false" value=""/>
+<model-identification-field name="Criticality" partOfTag="false" value=""/>
+<model-identification-field name="Project" partOfTag="false" value=""/>
+<model-identification-field name="Epic" partOfTag="false" value=""/>
+<model-identification-field name="Feature" partOfTag="false" value=""/>
+<model-identification-field name="User Story" partOfTag="false" value=""/>
+</model-identification>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="OrderShippingDestination" type="STRING">
+<value name="domestic" weight="2"/>
+<value name="foreign" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="OrderPricingScheme" type="STRING">
+<value name="scheme1" weight="1"/>
+<value name="scheme2" weight="1"/>
+<value name="scheme3" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="OrderDeliveryTimeframe" type="STRING">
+<value name="immediate" weight="1"/>
+<value name="Oneweek" weight="1"/>
+<value name="Onemonth" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="OrderShipping" type="STRING">
+<value name="ground" weight="1"/>
+<value name="sea" weight="1"/>
+<value name="air" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="ItenStockStatus" type="STRING">
+<value name="validInstock" weight="1"/>
+<value name="validOutofstock" weight="1"/>
+<value name="invalid" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="ItemIsExportControlled" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="CustomerCreditStatus" type="STRING">
+<value name="approved" weight="1"/>
+<value name="denied" weight="1"/>
+<value name="unknown" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="TestCounter" type="COUNTER">
+<countedValue attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<countedValue attribute="OrderDeliveryTimeframe" value="immediate"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Price" type="INT">
+<value name="10" weight="1"/>
+<value name="20" weight="1"/>
+<value name="30" weight="1"/>
+<value name="40" weight="1"/>
+<value name="50" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Currency" type="STRING">
+<value name="USD" weight="1"/>
+<value name="CNY" weight="1"/>
+<value name="HKD" weight="1"/>
+<value name="GBP" weight="1"/>
+<value name="EUR" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="BillingByEmail" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Email" type="STRING">
+<value name="Valid" weight="1"/>
+<value name="Invalid" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="HomeAddress" type="STRING">
+<value name="Valid" weight="1"/>
+<value name="Invalid" weight="1"/>
+<value name="N/A" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Product" type="STRING">
+<value name="Meat" weight="1"/>
+<value name="Milk" weight="1"/>
+<value name="Fish" weight="1"/>
+<value name="Drinks" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Meat" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Milk" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Fish" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Drinks" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="FileSize" type="STRING">
+<value name="0" weight="1"/>
+<value name="1" weight="1"/>
+<value name="2" weight="1"/>
+<value name="3" weight="1"/>
+<value name="4" weight="1"/>
+<value name="5" weight="1"/>
+<value name="6" weight="1"/>
+<value name="7" weight="1"/>
+<value name="8" weight="1"/>
+<value name="9" weight="1"/>
+<value name="10" weight="1"/>
+<value name="11" weight="1"/>
+<value name="12" weight="1"/>
+<value name="13" weight="1"/>
+<value name="14" weight="1"/>
+<value name="15" weight="1"/>
+<value name="16" weight="1"/>
+<value name="17" weight="1"/>
+<value name="18" weight="1"/>
+<value name="19" weight="1"/>
+<value name="20" weight="1"/>
+<value name="21" weight="1"/>
+<value name="22" weight="1"/>
+<value name="23" weight="1"/>
+<value name="24" weight="1"/>
+<value name="25" weight="1"/>
+<value name="26" weight="1"/>
+<value name="27" weight="1"/>
+<value name="28" weight="1"/>
+<value name="29" weight="1"/>
+<value name="30" weight="1"/>
+<value name="31" weight="1"/>
+<value name="32" weight="1"/>
+<value name="33" weight="1"/>
+<value name="34" weight="1"/>
+<value name="35" weight="1"/>
+<value name="36" weight="1"/>
+<value name="37" weight="1"/>
+<value name="38" weight="1"/>
+<value name="39" weight="1"/>
+<value name="40" weight="1"/>
+<value name="41" weight="1"/>
+<value name="42" weight="1"/>
+<value name="43" weight="1"/>
+<value name="44" weight="1"/>
+<value name="45" weight="1"/>
+<value name="46" weight="1"/>
+<value name="47" weight="1"/>
+<value name="48" weight="1"/>
+<value name="49" weight="1"/>
+<value name="50" weight="1"/>
+<value name="51" weight="1"/>
+<value name="52" weight="1"/>
+<value name="53" weight="1"/>
+<value name="54" weight="1"/>
+<value name="55" weight="1"/>
+<value name="56" weight="1"/>
+<value name="57" weight="1"/>
+<value name="58" weight="1"/>
+<value name="59" weight="1"/>
+<value name="60" weight="1"/>
+<value name="61" weight="1"/>
+<value name="62" weight="1"/>
+<value name="63" weight="1"/>
+<value name="64" weight="1"/>
+<value name="65" weight="1"/>
+<value name="66" weight="1"/>
+<value name="67" weight="1"/>
+<value name="68" weight="1"/>
+<value name="69" weight="1"/>
+<value name="70" weight="1"/>
+<value name="71" weight="1"/>
+<value name="72" weight="1"/>
+<value name="73" weight="1"/>
+<value name="74" weight="1"/>
+<value name="75" weight="1"/>
+<value name="76" weight="1"/>
+<value name="77" weight="1"/>
+<value name="78" weight="1"/>
+<value name="79" weight="1"/>
+<value name="80" weight="1"/>
+<value name="81" weight="1"/>
+<value name="82" weight="1"/>
+<value name="83" weight="1"/>
+<value name="84" weight="1"/>
+<value name="85" weight="1"/>
+<value name="86" weight="1"/>
+<value name="87" weight="1"/>
+<value name="88" weight="1"/>
+<value name="89" weight="1"/>
+<value name="90" weight="1"/>
+<value name="91" weight="1"/>
+<value name="92" weight="1"/>
+<value name="93" weight="1"/>
+<value name="94" weight="1"/>
+<value name="95" weight="1"/>
+<value name="96" weight="1"/>
+<value name="97" weight="1"/>
+<value name="98" weight="1"/>
+<value name="99" weight="1"/>
+<value name="100" weight="1"/>
+<value name="101" weight="1"/>
+<value name="102" weight="1"/>
+<value name="103" weight="1"/>
+<value name="104" weight="1"/>
+<value name="105" weight="1"/>
+<value name="106" weight="1"/>
+<value name="107" weight="1"/>
+<value name="108" weight="1"/>
+<value name="109" weight="1"/>
+<value name="110" weight="1"/>
+<value name="111" weight="1"/>
+<value name="112" weight="1"/>
+<value name="113" weight="1"/>
+<value name="114" weight="1"/>
+<value name="115" weight="1"/>
+<value name="116" weight="1"/>
+<value name="117" weight="1"/>
+<value name="118" weight="1"/>
+<value name="119" weight="1"/>
+<value name="120" weight="1"/>
+<value name="121" weight="1"/>
+<value name="122" weight="1"/>
+<value name="123" weight="1"/>
+<value name="124" weight="1"/>
+<value name="125" weight="1"/>
+<value name="126" weight="1"/>
+<value name="127" weight="1"/>
+<value name="128" weight="1"/>
+<value name="129" weight="1"/>
+<value name="130" weight="1"/>
+<value name="131" weight="1"/>
+<value name="132" weight="1"/>
+<value name="133" weight="1"/>
+<value name="134" weight="1"/>
+<value name="135" weight="1"/>
+<value name="136" weight="1"/>
+<value name="137" weight="1"/>
+<value name="138" weight="1"/>
+<value name="139" weight="1"/>
+<value name="140" weight="1"/>
+<value name="141" weight="1"/>
+<value name="142" weight="1"/>
+<value name="143" weight="1"/>
+<value name="144" weight="1"/>
+<value name="145" weight="1"/>
+<value name="146" weight="1"/>
+<value name="147" weight="1"/>
+<value name="148" weight="1"/>
+<value name="149" weight="1"/>
+<value name="150" weight="1"/>
+<value name="151" weight="1"/>
+<value name="152" weight="1"/>
+<value name="153" weight="1"/>
+<value name="154" weight="1"/>
+<value name="155" weight="1"/>
+<value name="156" weight="1"/>
+<value name="157" weight="1"/>
+<value name="158" weight="1"/>
+<value name="159" weight="1"/>
+<value name="160" weight="1"/>
+<value name="161" weight="1"/>
+<value name="162" weight="1"/>
+<value name="163" weight="1"/>
+<value name="164" weight="1"/>
+<value name="165" weight="1"/>
+<value name="166" weight="1"/>
+<value name="167" weight="1"/>
+<value name="168" weight="1"/>
+<value name="169" weight="1"/>
+<value name="170" weight="1"/>
+<value name="171" weight="1"/>
+<value name="172" weight="1"/>
+<value name="173" weight="1"/>
+<value name="174" weight="1"/>
+<value name="175" weight="1"/>
+<value name="176" weight="1"/>
+<value name="177" weight="1"/>
+<value name="178" weight="1"/>
+<value name="179" weight="1"/>
+<value name="180" weight="1"/>
+<value name="181" weight="1"/>
+<value name="182" weight="1"/>
+<value name="183" weight="1"/>
+<value name="184" weight="1"/>
+<value name="185" weight="1"/>
+<value name="186" weight="1"/>
+<value name="187" weight="1"/>
+<value name="188" weight="1"/>
+<value name="189" weight="1"/>
+<value name="190" weight="1"/>
+<value name="191" weight="1"/>
+<value name="192" weight="1"/>
+<value name="193" weight="1"/>
+<value name="194" weight="1"/>
+<value name="195" weight="1"/>
+<value name="196" weight="1"/>
+<value name="197" weight="1"/>
+<value name="198" weight="1"/>
+<value name="199" weight="1"/>
+<value name="200" weight="1"/>
+<value name="201" weight="1"/>
+<value name="202" weight="1"/>
+<value name="203" weight="1"/>
+<value name="204" weight="1"/>
+<value name="205" weight="1"/>
+<value name="206" weight="1"/>
+<value name="207" weight="1"/>
+<value name="208" weight="1"/>
+<value name="209" weight="1"/>
+<value name="210" weight="1"/>
+<value name="211" weight="1"/>
+<value name="212" weight="1"/>
+<value name="213" weight="1"/>
+<value name="214" weight="1"/>
+<value name="215" weight="1"/>
+<value name="216" weight="1"/>
+<value name="217" weight="1"/>
+<value name="218" weight="1"/>
+<value name="219" weight="1"/>
+<value name="220" weight="1"/>
+<value name="221" weight="1"/>
+<value name="222" weight="1"/>
+<value name="223" weight="1"/>
+<value name="224" weight="1"/>
+<value name="225" weight="1"/>
+<value name="226" weight="1"/>
+<value name="227" weight="1"/>
+<value name="228" weight="1"/>
+<value name="229" weight="1"/>
+<value name="230" weight="1"/>
+<value name="231" weight="1"/>
+<value name="232" weight="1"/>
+<value name="233" weight="1"/>
+<value name="234" weight="1"/>
+<value name="235" weight="1"/>
+<value name="236" weight="1"/>
+<value name="237" weight="1"/>
+<value name="238" weight="1"/>
+<value name="239" weight="1"/>
+<value name="240" weight="1"/>
+<value name="241" weight="1"/>
+<value name="242" weight="1"/>
+<value name="243" weight="1"/>
+<value name="244" weight="1"/>
+<value name="245" weight="1"/>
+<value name="246" weight="1"/>
+<value name="247" weight="1"/>
+<value name="248" weight="1"/>
+<value name="249" weight="1"/>
+<value name="250" weight="1"/>
+<value name="251" weight="1"/>
+<value name="252" weight="1"/>
+<value name="253" weight="1"/>
+<value name="254" weight="1"/>
+<value name="255" weight="1"/>
+<value name="256" weight="1"/>
+<value name="257" weight="1"/>
+<value name="258" weight="1"/>
+<value name="259" weight="1"/>
+<value name="260" weight="1"/>
+<value name="261" weight="1"/>
+<value name="262" weight="1"/>
+<value name="263" weight="1"/>
+<value name="264" weight="1"/>
+<value name="265" weight="1"/>
+<value name="266" weight="1"/>
+<value name="267" weight="1"/>
+<value name="268" weight="1"/>
+<value name="269" weight="1"/>
+<value name="270" weight="1"/>
+<value name="271" weight="1"/>
+<value name="272" weight="1"/>
+<value name="273" weight="1"/>
+<value name="274" weight="1"/>
+<value name="275" weight="1"/>
+<value name="276" weight="1"/>
+<value name="277" weight="1"/>
+<value name="278" weight="1"/>
+<value name="279" weight="1"/>
+<value name="280" weight="1"/>
+<value name="281" weight="1"/>
+<value name="282" weight="1"/>
+<value name="283" weight="1"/>
+<value name="284" weight="1"/>
+<value name="285" weight="1"/>
+<value name="286" weight="1"/>
+<value name="287" weight="1"/>
+<value name="288" weight="1"/>
+<value name="289" weight="1"/>
+<value name="290" weight="1"/>
+<value name="291" weight="1"/>
+<value name="292" weight="1"/>
+<value name="293" weight="1"/>
+<value name="294" weight="1"/>
+<value name="295" weight="1"/>
+<value name="296" weight="1"/>
+<value name="297" weight="1"/>
+<value name="298" weight="1"/>
+<value name="299" weight="1"/>
+<value name="300" weight="1"/>
+<value name="301" weight="1"/>
+<value name="302" weight="1"/>
+<value name="303" weight="1"/>
+<value name="304" weight="1"/>
+<value name="305" weight="1"/>
+<value name="306" weight="1"/>
+<value name="307" weight="1"/>
+<value name="308" weight="1"/>
+<value name="309" weight="1"/>
+<value name="310" weight="1"/>
+<value name="311" weight="1"/>
+<value name="312" weight="1"/>
+<value name="313" weight="1"/>
+<value name="314" weight="1"/>
+<value name="315" weight="1"/>
+<value name="316" weight="1"/>
+<value name="317" weight="1"/>
+<value name="318" weight="1"/>
+<value name="319" weight="1"/>
+<value name="320" weight="1"/>
+<value name="321" weight="1"/>
+<value name="322" weight="1"/>
+<value name="323" weight="1"/>
+<value name="324" weight="1"/>
+<value name="325" weight="1"/>
+<value name="326" weight="1"/>
+<value name="327" weight="1"/>
+<value name="328" weight="1"/>
+<value name="329" weight="1"/>
+<value name="330" weight="1"/>
+<value name="331" weight="1"/>
+<value name="332" weight="1"/>
+<value name="333" weight="1"/>
+<value name="334" weight="1"/>
+<value name="335" weight="1"/>
+<value name="336" weight="1"/>
+<value name="337" weight="1"/>
+<value name="338" weight="1"/>
+<value name="339" weight="1"/>
+<value name="340" weight="1"/>
+<value name="341" weight="1"/>
+<value name="342" weight="1"/>
+<value name="343" weight="1"/>
+<value name="344" weight="1"/>
+<value name="345" weight="1"/>
+<value name="346" weight="1"/>
+<value name="347" weight="1"/>
+<value name="348" weight="1"/>
+<value name="349" weight="1"/>
+<value name="350" weight="1"/>
+<value name="351" weight="1"/>
+<value name="352" weight="1"/>
+<value name="353" weight="1"/>
+<value name="354" weight="1"/>
+<value name="355" weight="1"/>
+<value name="356" weight="1"/>
+<value name="357" weight="1"/>
+<value name="358" weight="1"/>
+<value name="359" weight="1"/>
+<value name="360" weight="1"/>
+<value name="361" weight="1"/>
+<value name="362" weight="1"/>
+<value name="363" weight="1"/>
+<value name="364" weight="1"/>
+<value name="365" weight="1"/>
+<value name="366" weight="1"/>
+<value name="367" weight="1"/>
+<value name="368" weight="1"/>
+<value name="369" weight="1"/>
+<value name="370" weight="1"/>
+<value name="371" weight="1"/>
+<value name="372" weight="1"/>
+<value name="373" weight="1"/>
+<value name="374" weight="1"/>
+<value name="375" weight="1"/>
+<value name="376" weight="1"/>
+<value name="377" weight="1"/>
+<value name="378" weight="1"/>
+<value name="379" weight="1"/>
+<value name="380" weight="1"/>
+<value name="381" weight="1"/>
+<value name="382" weight="1"/>
+<value name="383" weight="1"/>
+<value name="384" weight="1"/>
+<value name="385" weight="1"/>
+<value name="386" weight="1"/>
+<value name="387" weight="1"/>
+<value name="388" weight="1"/>
+<value name="389" weight="1"/>
+<value name="390" weight="1"/>
+<value name="391" weight="1"/>
+<value name="392" weight="1"/>
+<value name="393" weight="1"/>
+<value name="394" weight="1"/>
+<value name="395" weight="1"/>
+<value name="396" weight="1"/>
+<value name="397" weight="1"/>
+<value name="398" weight="1"/>
+<value name="399" weight="1"/>
+<value name="400" weight="1"/>
+<value name="401" weight="1"/>
+<value name="402" weight="1"/>
+<value name="403" weight="1"/>
+<value name="404" weight="1"/>
+<value name="405" weight="1"/>
+<value name="406" weight="1"/>
+<value name="407" weight="1"/>
+<value name="408" weight="1"/>
+<value name="409" weight="1"/>
+<value name="410" weight="1"/>
+<value name="411" weight="1"/>
+<value name="412" weight="1"/>
+<value name="413" weight="1"/>
+<value name="414" weight="1"/>
+<value name="415" weight="1"/>
+<value name="416" weight="1"/>
+<value name="417" weight="1"/>
+<value name="418" weight="1"/>
+<value name="419" weight="1"/>
+<value name="420" weight="1"/>
+<value name="421" weight="1"/>
+<value name="422" weight="1"/>
+<value name="423" weight="1"/>
+<value name="424" weight="1"/>
+<value name="425" weight="1"/>
+<value name="426" weight="1"/>
+<value name="427" weight="1"/>
+<value name="428" weight="1"/>
+<value name="429" weight="1"/>
+<value name="430" weight="1"/>
+<value name="431" weight="1"/>
+<value name="432" weight="1"/>
+<value name="433" weight="1"/>
+<value name="434" weight="1"/>
+<value name="435" weight="1"/>
+<value name="436" weight="1"/>
+<value name="437" weight="1"/>
+<value name="438" weight="1"/>
+<value name="439" weight="1"/>
+<value name="440" weight="1"/>
+<value name="441" weight="1"/>
+<value name="442" weight="1"/>
+<value name="443" weight="1"/>
+<value name="444" weight="1"/>
+<value name="445" weight="1"/>
+<value name="446" weight="1"/>
+<value name="447" weight="1"/>
+<value name="448" weight="1"/>
+<value name="449" weight="1"/>
+<value name="450" weight="1"/>
+<value name="451" weight="1"/>
+<value name="452" weight="1"/>
+<value name="453" weight="1"/>
+<value name="454" weight="1"/>
+<value name="455" weight="1"/>
+<value name="456" weight="1"/>
+<value name="457" weight="1"/>
+<value name="458" weight="1"/>
+<value name="459" weight="1"/>
+<value name="460" weight="1"/>
+<value name="461" weight="1"/>
+<value name="462" weight="1"/>
+<value name="463" weight="1"/>
+<value name="464" weight="1"/>
+<value name="465" weight="1"/>
+<value name="466" weight="1"/>
+<value name="467" weight="1"/>
+<value name="468" weight="1"/>
+<value name="469" weight="1"/>
+<value name="470" weight="1"/>
+<value name="471" weight="1"/>
+<value name="472" weight="1"/>
+<value name="473" weight="1"/>
+<value name="474" weight="1"/>
+<value name="475" weight="1"/>
+<value name="476" weight="1"/>
+<value name="477" weight="1"/>
+<value name="478" weight="1"/>
+<value name="479" weight="1"/>
+<value name="480" weight="1"/>
+<value name="481" weight="1"/>
+<value name="482" weight="1"/>
+<value name="483" weight="1"/>
+<value name="484" weight="1"/>
+<value name="485" weight="1"/>
+<value name="486" weight="1"/>
+<value name="487" weight="1"/>
+<value name="488" weight="1"/>
+<value name="489" weight="1"/>
+<value name="490" weight="1"/>
+<value name="491" weight="1"/>
+<value name="492" weight="1"/>
+<value name="493" weight="1"/>
+<value name="494" weight="1"/>
+<value name="495" weight="1"/>
+<value name="496" weight="1"/>
+<value name="497" weight="1"/>
+<value name="498" weight="1"/>
+<value name="499" weight="1"/>
+<value name="500" weight="1"/>
+<value description="" name="1 to 256 by 1 's" weight="1"/>
+<value description="" name="257 to 500 by 1 's" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Benefits" type="STRING">
+<value name="AllExisting" weight="1"/>
+<value name="SomeExistingSomeNew" weight="1"/>
+<value name="AllNew" weight="1"/>
+<value name="OneExisting" weight="1"/>
+<value name="OneNew" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Food" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="Lodging" type="BOOLEAN">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="FoodBeforeLodging" type="STRING">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+<value name="n/a" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="PaddingBefore" type="STRING">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+<value name="n/a" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="PaddingBetween" type="STRING">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+<value name="n/a" weight="1"/>
+</attribute>
+<attribute attr_class="NONE" dependencies="false" description="" iotype="NEITHER" name="PaddingAfter" type="STRING">
+<value name="true" weight="1"/>
+<value name="false" weight="1"/>
+<value name="n/a" weight="1"/>
+</attribute>
+<restriction expression="!(OrderShipping.equals(&quot;sea&quot;)) || !OrderDeliveryTimeframe.equals(&quot;immediate&quot;)" iff="false" isActive="true" isAutoGenerated="false" name="If-Then R01" type="If-Then">
+<if-expr is_or="false">
+<focus-ctd-cond attribute="OrderShipping" operation="Equals">
+<focus-ctd-cond-val value="sea"/>
+</focus-ctd-cond>
+</if-expr>
+<then-expr is_or="false">
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Doesn't Equal">
+<focus-ctd-cond-val value="immediate"/>
+</focus-ctd-cond>
+</then-expr>
+</restriction>
+<restriction expression="!(OrderShipping.equals(&quot;air&quot;)) || !OrderDeliveryTimeframe.equals(&quot;Onemonth&quot;)" iff="false" isActive="true" isAutoGenerated="false" name="If-Then R02" type="If-Then">
+<if-expr is_or="false">
+<focus-ctd-cond attribute="OrderShipping" operation="Equals">
+<focus-ctd-cond-val value="air"/>
+</focus-ctd-cond>
+</if-expr>
+<then-expr is_or="false">
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Doesn't Equal">
+<focus-ctd-cond-val value="Onemonth"/>
+</focus-ctd-cond>
+</then-expr>
+</restriction>
+<restriction expression="Price &lt;= 30" isActive="true" isAutoGenerated="false" name="Order Restriction" type="Exclusion"/>
+<restriction expression="TestCounter &lt; 1" isActive="true" isAutoGenerated="false" name="Counter Restriction" type="Exclusion"/>
+<restriction expression="!(BillingByEmail == true) || HomeAddress.equals(&quot;N/A&quot;)" iff="false" isActive="true" isAutoGenerated="false" name="BillingByEmail01" type="If-Then">
+<if-expr is_or="false">
+<focus-ctd-cond attribute="BillingByEmail" operation="Equals">
+<focus-ctd-cond-val value="true"/>
+</focus-ctd-cond>
+</if-expr>
+<then-expr is_or="false">
+<focus-ctd-cond attribute="HomeAddress" operation="Equals">
+<focus-ctd-cond-val value="N/A"/>
+</focus-ctd-cond>
+</then-expr>
+</restriction>
+<restriction expression="!(BillingByEmail == false) || !HomeAddress.equals(&quot;N/A&quot;)" iff="false" isActive="true" isAutoGenerated="false" name="BillingByEmail02" type="If-Then">
+<if-expr is_or="false">
+<focus-ctd-cond attribute="BillingByEmail" operation="Equals">
+<focus-ctd-cond-val value="false"/>
+</focus-ctd-cond>
+</if-expr>
+<then-expr is_or="false">
+<focus-ctd-cond attribute="HomeAddress" operation="Doesn't Equal">
+<focus-ctd-cond-val value="N/A"/>
+</focus-ctd-cond>
+</then-expr>
+</restriction>
+<restriction expression="(Meat == false) &amp;&amp; (Milk == false) &amp;&amp; (Fish == false)&amp;&amp; (Drinks == false)" isActive="true" isAutoGenerated="false" name="NoProduct" type="Exclusion"/>
+<coverage-reqs-sets defaultCoverageRequirementsSet="Demotest coverage1">
+<coverage-reqs-set description="Demotest coverage1 description" name="Demotest coverage1">
+<coverage-req>
+<attribute name="OrderShippingDestination"/>
+<attribute name="OrderPricingScheme"/>
+<attribute name="OrderDeliveryTimeframe"/>
+<coverage-goal coverage-goal-val="3"/>
+</coverage-req>
+<coverage-req>
+<attribute name="Price"/>
+<attribute name="Currency"/>
+<coverage-goal coverage-goal-val="2"/>
+</coverage-req>
+</coverage-reqs-set>
+<coverage-reqs-set description="DEMO2" name="Demotest coverage2">
+<coverage-req>
+<attribute name="OrderShippingDestination"/>
+<attribute name="OrderPricingScheme"/>
+<attribute name="OrderDeliveryTimeframe"/>
+<coverage-goal coverage-goal-val="2"/>
+</coverage-req>
+</coverage-reqs-set>
+</coverage-reqs-sets>
+<neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+<coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+<coverage-req>
+<coverage-goal coverage-goal-val="1"/>
+<negative-attribute-combination>
+<attribute name="ItenStockStatus"/>
+</negative-attribute-combination>
+</coverage-req>
+<coverage-req>
+<coverage-goal coverage-goal-val="1"/>
+<negative-attribute-combination>
+<attribute name="CustomerCreditStatus"/>
+</negative-attribute-combination>
+</coverage-req>
+<coverage-req>
+<coverage-goal coverage-goal-val="1"/>
+<negative-attribute-combination>
+<attribute name="Email"/>
+</negative-attribute-combination>
+</coverage-req>
+</coverage-reqs-set>
+</neg-coverage-reqs-sets>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="approved"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="denied"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="unknown"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="approved"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="denied"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validInstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="unknown"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="approved"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="denied"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="false"/>
+<attr-value attribute="CustomerCreditStatus" value="unknown"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="approved"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="denied"/>
+</dont-care>
+<dont-care>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<attr-value attribute="OrderShipping" value="ground"/>
+<attr-value attribute="ItenStockStatus" value="validOutofstock"/>
+<attr-value attribute="ItemIsExportControlled" value="true"/>
+<attr-value attribute="CustomerCreditStatus" value="unknown"/>
+</dont-care>
+<negative-combination>
+<attr-value attribute="ItenStockStatus" value="invalid"/>
+</negative-combination>
+<negative-combination>
+<attr-value attribute="CustomerCreditStatus" value="denied"/>
+</negative-combination>
+<negative-combination>
+<attr-value attribute="CustomerCreditStatus" value="unknown"/>
+</negative-combination>
+<negative-combination>
+<attr-value attribute="Email" value="Invalid"/>
+</negative-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="false"/>
+<attr-value attribute="Email" value="Invalid"/>
+<attr-value attribute="HomeAddress" value="N/A"/>
+</na-mapping-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="false"/>
+<attr-value attribute="Email" value="Valid"/>
+<attr-value attribute="HomeAddress" value="N/A"/>
+</na-mapping-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="true"/>
+<attr-value attribute="Email" value="Invalid"/>
+<attr-value attribute="HomeAddress" value="Invalid"/>
+</na-mapping-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="true"/>
+<attr-value attribute="Email" value="Invalid"/>
+<attr-value attribute="HomeAddress" value="Valid"/>
+</na-mapping-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="true"/>
+<attr-value attribute="Email" value="Valid"/>
+<attr-value attribute="HomeAddress" value="Invalid"/>
+</na-mapping-combination>
+<na-mapping-combination>
+<attr-value attribute="BillingByEmail" value="true"/>
+<attr-value attribute="Email" value="Valid"/>
+<attr-value attribute="HomeAddress" value="Valid"/>
+</na-mapping-combination>
+<focus-ctd-decoration decorationType="freeStyle" isActiveDecoration="true">
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Trigger01" negative="false" suppressNewLine="false">
+<focus-ctd-single-template>
+<focus-ctd-template text="Testcase # &lt;test_number&gt;&#13;&#10;&lt;requirements&gt; is covered by this case.&#13;&#10;&#13;&#10;Prerequiste condition:&#13;&#10;The customer credit status is &lt;att_name = CustomerCreditStatus&gt;&#13;&#10;&#13;&#10;An &lt;att_name = OrderShippingDestination&gt; order with &lt;att_name = OrderPricingScheme&gt; is created, the order is using &lt;att_name = OrderShipping&gt; shipping method."/>
+</focus-ctd-single-template>
+<focus-ctd-cond attribute="OrderShippingDestination" operation="Equals">
+<focus-ctd-cond-val value="domestic"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderPricingScheme" operation="Equals">
+<focus-ctd-cond-val value="scheme1"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Equals">
+<focus-ctd-cond-val value="immediate"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderShipping" operation="Equals">
+<focus-ctd-cond-val value="ground"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="ItenStockStatus" operation="Equals">
+<focus-ctd-cond-val value="validInstock"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="ItemIsExportControlled" operation="Equals">
+<focus-ctd-cond-val value="true"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="CustomerCreditStatus" operation="Equals">
+<focus-ctd-cond-val value="approved"/>
+</focus-ctd-cond>
+</focus-ctd-trigger>
+</focus-ctd-decoration>
+<focus-ctd-decoration decorationType="structuredDecoration" isActiveDecoration="false">
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Trigger02" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+<focus-ctd-multiple-template>
+<focus-ctd-multiple-template-testSteps>
+<focus-ctd-template text="Test case# &lt;test_number&gt;&#9;&lt;modelTag&gt;&#10;Covered requirement &lt;requirements&gt;&#10;&lt;good_bad&gt; test path&#10;"/>
+<focus-ctd-template text="Create an &lt;att_name = OrderShippingDestination&gt; Order."/>
+<focus-ctd-template text="Check the Order Pricing Scheme."/>
+</focus-ctd-multiple-template-testSteps>
+<focus-ctd-multiple-template-expectedResults>
+<focus-ctd-template text=""/>
+<focus-ctd-template text="The &lt;att_name = OrderShippingDestination&gt; Order is created successfully."/>
+<focus-ctd-template text="Verify the Order Pricing Scheme is &lt;att_name = OrderPricingScheme&gt;."/>
+</focus-ctd-multiple-template-expectedResults>
+</focus-ctd-multiple-template>
+<focus-ctd-cond attribute="OrderShippingDestination" operation="Equals">
+<focus-ctd-cond-val value="domestic"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderPricingScheme" operation="Equals">
+<focus-ctd-cond-val value="scheme1"/>
+<focus-ctd-cond-val value="scheme2"/>
+<focus-ctd-cond-val value="scheme3"/>
+</focus-ctd-cond>
+</focus-ctd-trigger>
+</focus-ctd-decoration>
+<focus-ctd-decoration decorationType="cucumberDecoration" isActiveDecoration="false">
+<focus-ctd-trigger appliance="FIRST_TEST" is_or="false" name="Trigger03a" negative="false" suppressNewLine="false" triggerType="Feature">
+<focus-ctd-single-template>
+<focus-ctd-template text="Fearture description"/>
+</focus-ctd-single-template>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Trigger03b" negative="false" suppressNewLine="false" triggerType="Scenario">
+<focus-ctd-single-template>
+<focus-ctd-template text="Testcase # &lt;test_number&gt;&#13;&#10;&lt;requirements&gt; is covered by this case.&#13;&#10;&#13;&#10;Prerequiste condition:&#13;&#10;The customer credit status is &lt;att_name = CustomerCreditStatus&gt;&#13;&#10;&#13;&#10;An &lt;att_name = OrderShippingDestination&gt; order with &lt;att_name = OrderPricingScheme&gt; is created, the order is using &lt;att_name = OrderShipping&gt; shipping method."/>
+</focus-ctd-single-template>
+<focus-ctd-cond attribute="OrderShippingDestination" operation="Equals">
+<focus-ctd-cond-val value="domestic"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderPricingScheme" operation="Equals">
+<focus-ctd-cond-val value="scheme1"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Equals">
+<focus-ctd-cond-val value="immediate"/>
+</focus-ctd-cond>
+</focus-ctd-trigger>
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Trigger03c" negative="false" suppressNewLine="false" triggerType="Steps">
+<focus-ctd-cucumber-steps-template>
+<cucumber-step actionName="navigateTo" category="NavigationalCategory" stepType="Given">
+<focus-ctd-template text="I navigate to &quot;&lt;att_name = OrderShippingDestination&gt;&quot;"/>
+<actionParameter data="OrderShippingDestination" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="radioButtonSelection" category="InputTypeCategory" stepType="When">
+<focus-ctd-template text="I select radio option &quot;&lt;att_name = OrderPricingScheme&gt;&quot;"/>
+<actionParameter data="OrderPricingScheme" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="radioButtonSelection" category="InputTypeCategory" stepType="And">
+<focus-ctd-template text="I select radio option &quot;&lt;att_name = OrderDeliveryTimeframe&gt;&quot;"/>
+<actionParameter data="OrderDeliveryTimeframe" dataSource="AttributeValue"/>
+</cucumber-step>
+<cucumber-step actionName="validateAlert" category="ValidationCategory" stepType="Then">
+<focus-ctd-template text="I should see alert text as &quot;(Order is created)&quot;"/>
+<actionParameter data="&quot;(Order is created)&quot;" dataSource="ExternalData"/>
+</cucumber-step>
+</focus-ctd-cucumber-steps-template>
+<focus-ctd-cond attribute="OrderShippingDestination" operation="Equals">
+<focus-ctd-cond-val value="domestic"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderPricingScheme" operation="Equals">
+<focus-ctd-cond-val value="scheme1"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Equals">
+<focus-ctd-cond-val value="immediate"/>
+</focus-ctd-cond>
+</focus-ctd-trigger>
+</focus-ctd-decoration>
+<focus-ctd-decoration decorationType="testCaseName" isActiveDecoration="false">
+<focus-ctd-trigger appliance="ALWAYS" is_or="false" name="Trigger04" negative="false" suppressNewLine="false">
+<focus-ctd-single-template>
+<focus-ctd-template text="Testcase # &lt;test_number&gt;&#13;&#10;&lt;requirements&gt; is covered by this case.&#13;&#10;&#13;&#10;Prerequiste condition:&#13;&#10;The customer credit status is &lt;att_name = CustomerCreditStatus&gt;&#13;&#10;&#13;&#10;An &lt;att_name = OrderShippingDestination&gt; order with &lt;att_name = OrderPricingScheme&gt; is created, the order is using &lt;att_name = OrderShipping&gt; shipping method."/>
+</focus-ctd-single-template>
+<focus-ctd-cond attribute="OrderShippingDestination" operation="Equals">
+<focus-ctd-cond-val value="domestic"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderPricingScheme" operation="Equals">
+<focus-ctd-cond-val value="scheme1"/>
+</focus-ctd-cond>
+<focus-ctd-cond attribute="OrderDeliveryTimeframe" operation="Equals">
+<focus-ctd-cond-val value="immediate"/>
+</focus-ctd-cond>
+</focus-ctd-trigger>
+</focus-ctd-decoration>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ001"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme2"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ001"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="domestic"/>
+<attr-value attribute="OrderPricingScheme" value="scheme3"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ001"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme1"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme2"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme2"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme3"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="Oneweek"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<requirements-tracking-combination>
+<attr-value attribute="OrderShippingDestination" value="foreign"/>
+<attr-value attribute="OrderPricingScheme" value="scheme3"/>
+<attr-value attribute="OrderDeliveryTimeframe" value="immediate"/>
+<requirement ID="RQ002"/>
+</requirements-tracking-combination>
+<focus-ctd-model-sync>
+<focus-ctd-model-sync-mult/>
+<focus-ctd-model-sync-na/>
+</focus-ctd-model-sync>
+</focus-model>
